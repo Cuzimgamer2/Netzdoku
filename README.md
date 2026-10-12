@@ -1,24 +1,68 @@
-# README
+# Netzdoku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Netzdoku ist ein Ruby-on-Rails-Projekt zur Netzwerkdokumentation. Es beschäftigt sich mit der Verwaltung von Kunden, Verträgen und Netzwerkgeräten.
 
-Things you may want to cover:
+## Technologien
 
-* Ruby version
+- Ruby
+- Ruby on Rails
+- SQLite
+- RSpec und Minitest
 
-* System dependencies
+## Funktionen und Lerninhalte
 
-* Configuration
+- Objektorientierte Programmierung mit Ruby
+- Netzwerkgeräte: Router, Switches und Access Points
+- Kunden, Verträge und Geräte mit Active Record
+- Single Table Inheritance (STI)
+- Service Objects zur Trennung von Verantwortlichkeiten
+- Polymorphismus und verschiedene Benachrichtigungskanäle
+- Automatisierte Tests
 
-* Database creation
+## Voraussetzungen
 
-* Database initialization
+- Ruby in der zum Projekt passenden Version
+- Bundler
+- SQLite
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+Repository klonen und in das Rails-Projekt wechseln:
 
-* Deployment instructions
+```bash
+git clone https://github.com/Cuzimgamer2/Netzdoku.git
+cd Netzdoku/netzdoku
+```
 
-* ...
+Abhängigkeiten installieren:
+
+```bash
+bundle install
+```
+
+Datenbank vorbereiten:
+
+```bash
+bin/rails db:prepare
+```
+
+Anwendung starten:
+
+```bash
+bin/rails server
+```
+
+Danach ist die Anwendung normalerweise unter http://localhost:3000 erreichbar.
+
+## Tests
+
+Alle RSpec- und Minitest-Tests ausführen:
+
+```bash
+bundle exec rspec
+bin/rails test
+```
+
+## Status
+
+Das Projekt wird im Rahmen einer Ausbildung entwickelt und schrittweise erweitert.
