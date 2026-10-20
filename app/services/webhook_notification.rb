@@ -1,5 +1,5 @@
-class 
-  def send_message
-    puts "Ihre Webhook Benachritigung wurde verschickt"
+class WebhookNotification
+  def send_message(message)
+    puts "Ihre Webhook-Benachrichtigung wurde verschickt: #{message}"
   end
 end

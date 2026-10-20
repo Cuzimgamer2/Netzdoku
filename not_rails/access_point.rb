@@ -9,7 +9,7 @@ class AccessPoint < NetworkDevice
   end
 
   def describe
-    "Infos switch: #{name}, #{ip_address}, #{status}, #{range}"
+    "Infos Accesspoint: #{name}, #{ip_address}, #{status}, #{range}"
   end
 end
 

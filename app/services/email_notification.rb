@@ -1,5 +1,5 @@
 class EmailNotification
-  def send_message
-    puts "Ihre Email Benachritigung wurde verschickt"
+  def send_message(message)
+  puts "E-Mail wird gesendet: #{message}"
   end
 end

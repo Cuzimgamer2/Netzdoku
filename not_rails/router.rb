@@ -4,7 +4,7 @@ class Router < NetworkDevice
   attr_reader :routing_table
   include Pingable
   def initialize(name, ip_address, status, routing_table)
-    (name, ip_address, status)
+    super(name, ip_address, status)
     @routing_table = routing_table
   end
 
@@ -13,6 +13,6 @@ class Router < NetworkDevice
   end
 end
 
-router = Router.new("mikrotik", "1.1.1.1", "running", [20, 20])
+router = Router.new("mikrotik", "1.1.1.1", "running", [ 20, 20 ])
 puts router.describe
 puts router.ping

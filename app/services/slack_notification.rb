@@ -1,5 +1,5 @@
-class 
-  def send_message
-    puts "Ihre Slack Benachritigung wurde verschickt"
+class SlackNotification
+  def send_message(message)
+    puts "Ihre Slack-Benachrichtigung wurde verschickt: #{message}"
   end
 end

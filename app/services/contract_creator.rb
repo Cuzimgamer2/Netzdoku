@@ -1,5 +1,13 @@
 class ContractCreator
+  def initialize(customer:, name:)
+    @customer = customer
+    @name = name
+  end
+
   def create
-    contract = Contract.create!(customer: current_customer)
+    Contract.create!(
+      customer: @customer,
+      name: @name
+    )
   end
 end

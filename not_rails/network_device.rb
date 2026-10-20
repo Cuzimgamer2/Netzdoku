@@ -1,8 +1,7 @@
 class NetworkDevice
   attr_reader :name, :ip_address, :status
-  VALID_STATUS = ["running", "stopped", "waiting"]
+  VALID_STATUS = [ "running", "stopped", "waiting" ]
 
-  
   def initialize(name, ip_address, status)
     @name = name
     @ip_address = ip_address
@@ -12,11 +11,12 @@ class NetworkDevice
   def describe
     "Infos: #{@name}, #{@ip_address}, #{@status}"
   end
+
   def update_status!(new_status)
     if VALID_STATUS.include?(new_status)
       @status = new_status
     else
-      puts "not working, error"
+      raise ArgumentError, "Ungültiger Status: #{new_status}"
     end
   end
 end

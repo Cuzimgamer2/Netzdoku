@@ -1,5 +1,5 @@
 class SmsNotification
-  def send_message
-    puts "Ihre SMS Benachritigung wurde verschickt"
+  def send_message(message)
+    puts "Ihre SMS-Benachrichtigung wurde verschickt: #{message}"
   end
 end
